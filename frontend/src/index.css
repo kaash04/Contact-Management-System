@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reddit Sans", sans-serif !important;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.homeContainer{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.centralSelector{
+  width: 6rem;
+  height: 6rem;
+  background-color: #ffffffe6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: glow 3s infinite linear;
+  transition: all 400ms ease;
+
+  &:hover{
+    scale: 1.2;
+  }
+}
+@keyframes glow {
+  0%{
+    box-shadow: 0 0 15px #fff;
+  }
+  50%{
+    box-shadow: 0 0 20px #fff;
+  }
+  100%{
+    box-shadow: 0 0 15px #fff;
+  }
+}
+
+.bottomText{
+  color: #f00;
+  font-size: 10rem;
+}
